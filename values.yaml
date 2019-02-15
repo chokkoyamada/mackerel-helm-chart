@@ -1,0 +1,19 @@
+# Default values for mackerel.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+replicaCount: 1
+
+image:
+  repository: mackerel/mackerel-agent
+  tag: latest
+  pullPolicy: IfNotPresent
+
+nameOverride: ""
+fullnameOverride: ""
+
+mackerel:
+  apikey: INSERT_YOUR_APIKEY_HERE
+  service: minikube
+  role: mbp13
+  enable_docker_plugin: 1
